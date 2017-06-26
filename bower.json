@@ -1,0 +1,17 @@
+{
+  "name": "customerlist",
+  "description": "Small description for customerlist goes here",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "picnic": "^6.4.0"
+  }
+}

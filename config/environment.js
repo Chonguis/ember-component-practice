@@ -4,6 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'customerlist',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+        apiKey: 'xyz',
+        authDomain: "customerlist-524cb.firebaseapp.com",
+        databaseURL: "https://customerlist-524cb.firebaseio.com",
+        storageBucket: "customerlist-524cb.appspot.com"
+      },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -11,6 +18,7 @@ module.exports = function(environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
+      ENABLE_DS_FILTER: true,
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
